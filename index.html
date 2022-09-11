@@ -2,46 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
 </head>
-
 
 <body>
     <section class="menu">
-        <!--title-->
+        <!-- title -->
         <div class="title">
             <h2>our menu</h2>
             <div class="underline"></div>
         </div>
-        <!--filter buttons-->
+        <!-- filter buttons -->
         <div class="btn-container">
-            <button class="filter-btn" type="button">All</button>
-            <button class="filter-btn" type="button">Breakfast</button>
-            <button class="filter-btn" type="button">Lunch</button>
-            <button class="filter-btn" type="button">Shakes</button>
-
+            <!-- <button type="button" class="filter-btn" data-id="all">all</button>
+        <button type="button" class="filter-btn" data-id="breakfast">
+          breakfast
+        </button>
+        <button type="button" class="filter-btn" data-id="lunch">lunch</button>
+        <button type="button" class="filter-btn" data-id="shakes">
+          shakes
+        </button> -->
         </div>
-        <!--menu items-->
+        <!-- menu items -->
         <div class="section-center">
-            <!--single item-->
+            <!-- single item -->
             <article class="menu-item">
-                <img src="./images/pancakes.jpeg" alt="item-title" class="photo">
-                <!--item info-->
+                <img src="" alt="menu item" class="photo" />
                 <div class="item-info">
                     <header>
-                        <h4 class="item-title">buttermilk pancakes</h4>
+                        <h4>buttermilk pancakes</h4>
                         <h4 class="price">$15</h4>
                     </header>
-                    <p class="item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam non corrupti illo incidunt totam, voluptas sunt? Totam, maxime nisi illum porro quaerat odio corrupti, accusamus ipsam minima doloremque sequi perferendis.</p>
+                    <p class="item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore laboriosam excepturi! Quo, officia.
+                    </p>
                 </div>
             </article>
-            <!--end of single item-->
+            <!-- end of single item -->
+            <!-- single item -->
+            <article class="menu-item">
+                <img src="./menu-item.jpeg" alt="menu item" class="photo" />
+                <div class="item-info">
+                    <header>
+                        <h4>buttermilk pancakes</h4>
+                        <h4 class="price">$15</h4>
+                    </header>
+                    <p class="item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore laboriosam excepturi! Quo, officia.
+                    </p>
+                </div>
+            </article>
+            <!-- end of single item -->
+            <!-- single item -->
+            <article class="menu-item">
+                <img src="" alt="menu item" class="photo" />
+                <div class="item-info">
+                    <header>
+                        <h4>buttermilk pancakes</h4>
+                        <h4 class="price">$15</h4>
+                    </header>
+                    <p class="item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore laboriosam excepturi! Quo, officia.
+                    </p>
+                </div>
+            </article>
+            <!-- end of single item -->
         </div>
     </section>
+    <!-- javascript -->
+    <script src="app.js"></script>
 </body>
 
 </html>

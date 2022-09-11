@@ -3,7 +3,7 @@ const menu = [{
         title: "buttermilk pancakes",
         category: "breakfast",
         price: 15.99,
-        img: "C:/Users/nkrek/Desktop/coding/Javascript project/menu/images/pancakes.jpeg",
+        img: "./images/pancakes.jpeg",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
     },
     {
@@ -74,9 +74,6 @@ const menu = [{
 
 const sectionCenter = document.querySelector(".section-center");
 
-const filterBtns = document.querySelectorAll(".filter-btn");
-
-//load items
 window.addEventListener("DOMContentLoaded", function() {
     let displayMenu = menu.map(function(item) {
         // console.log(item);
@@ -99,7 +96,3 @@ window.addEventListener("DOMContentLoaded", function() {
 
     sectionCenter.innerHTML = displayMenu;
 });
-//filter iteems
-filtersBtns.forEach(function(btn) {
-    btn.addEventListener
-})
