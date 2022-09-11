@@ -74,6 +74,9 @@ const menu = [{
 
 const sectionCenter = document.querySelector(".section-center");
 
+const filterBtns = document.querySelectorAll(".filter-btn");
+
+//load items
 window.addEventListener("DOMContentLoaded", function() {
     let displayMenu = menu.map(function(item) {
         // console.log(item);
@@ -96,3 +99,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
     sectionCenter.innerHTML = displayMenu;
 });
+//filter iteems
+filtersBtns.forEach(function(btn) {
+    btn.addEventListener
+})
