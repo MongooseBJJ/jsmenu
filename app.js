@@ -1,3 +1,6 @@
+//get only unique categories
+// iterate over categories return button
+// make sure to select buttons when available
 const menu = [{
         id: 1,
         title: "The Slothful Waffle",
@@ -82,31 +85,25 @@ const menu = [{
 
 const sectionCenter = document.querySelector(".section-center");
 
+const container = document.querySelector(".btn-container");
+
 const filterBtns = document.querySelectorAll(".filter-btn");
 
 //load items
 window.addEventListener("DOMContentLoaded", function() {
-    // let displayMenu = menu.map(function(item) {
-    //     // console.log(item);
-
-    //     return `<article class="menu-item">
-    //         <img src=${item.img} alt=${item.title} class="photo" />
-    //         <div class="item-info">
-    //           <header>
-    //             <h4>${item.title}</h4>
-    //             <h4 class="price">$${item.price}</h4>
-    //           </header>
-    //           <p class="item-text">
-    //             ${item.desc}
-    //           </p>
-    //         </div>
-    //       </article>`;
-    // });
-    // displayMenu = displayMenu.join("");
-    // console.log(displayMenu);
-
-    // sectionCenter.innerHTML = displayMenu;
     displayMenuItems(menu);
+    const categories = menu.reduce(function(values, item) {
+        if (!values.includes(item.category)) {
+            values.push(item.category);
+        }
+        return values;
+    }, ['all']);
+    const menuBtns = categories.map(function(category) {
+        return ` <button type="button" class="filter-btn" data-id=${category}>
+        ${category}
+        </button>`
+    }).join("");
+    container.innerHTML = menuBtns;
 });
 //filter items
 filterBtns.forEach(function(btn) {
@@ -124,11 +121,19 @@ filterBtns.forEach(function(btn) {
         }
     });
 });
-
+//dynamically display buttons
+// function displayMenuBtns(menuBtns){
+//     const displayBtns = categories.map(function(btn){
+//         return `<button type="button" class="filter-btn" data-id=${btn.id}>
+//         all
+//         </button>`
+//     })
+// }
+//dynamically display items
 function displayMenuItems(menuItems) {
     let displayMenu = menuItems.map(function(item) {
         // console.log(item);
-
+        //dynamic item
         return `<article class="menu-item">
             <img src=${item.img} alt=${item.title} class="photo" />
             <div class="item-info">
