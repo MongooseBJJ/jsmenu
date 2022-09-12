@@ -91,6 +91,13 @@ const container = document.querySelector(".btn-container");
 //load items
 window.addEventListener("DOMContentLoaded", function() {
     displayMenuItems(menu);
+    displayMenuBtns();
+});
+
+
+
+//dynamically display buttons
+function displayMenuBtns() {
     const categories = menu.reduce(function(values, item) {
         if (!values.includes(item.category)) {
             values.push(item.category);
@@ -120,16 +127,8 @@ window.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-});
 
-//dynamically display buttons
-// function displayMenuBtns(menuBtns){
-//     const displayBtns = categories.map(function(btn){
-//         return `<button type="button" class="filter-btn" data-id=${btn.id}>
-//         all
-//         </button>`
-//     })
-// }
+}
 //dynamically display items
 function displayMenuItems(menuItems) {
     let displayMenu = menuItems.map(function(item) {
