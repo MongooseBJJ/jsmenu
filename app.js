@@ -9,7 +9,7 @@ const menu = [{
     {
         id: 2,
         title: "Memaw's Pecan Pie",
-        category: "lunch",
+        category: "breakfast",
         price: 10.00,
         img: "./images/pecanpiewaffle.jpg",
         desc: `topped with handmade praline pecan sauce, taste's just like Memaw makes.`,
@@ -17,7 +17,7 @@ const menu = [{
     {
         id: 3,
         title: "The Goin' Nanners",
-        category: "shakes",
+        category: "breakfast",
         price: 10.00,
         img: "./images/goin'naners.jpg",
         desc: `Topped with peanut butter, bananas, and a honey drizzle. Don't feed the bears`,
@@ -33,7 +33,7 @@ const menu = [{
     {
         id: 5,
         title: "Southern Sunshine",
-        category: "lunch",
+        category: "breakfast",
         price: 22.99,
         img: "./images/Southern.jpg",
         desc: `Topped with honey and cream cheese blend, fresh strawberries and blueberries with a honey drizzle`,
@@ -41,7 +41,7 @@ const menu = [{
     {
         id: 6,
         title: "The Gimmie S'more",
-        category: "shakes",
+        category: "breakfast",
         price: 18.99,
         img: "./images/smores.jpg",
         desc: `Topped with Granny's handmade country recipe sauce`,
@@ -49,7 +49,7 @@ const menu = [{
     {
         id: 7,
         title: "bacon overflow",
-        category: "breakfast",
+        category: "lunch",
         price: 8.99,
         img: "./images/bacon.jpg",
         desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
@@ -65,11 +65,19 @@ const menu = [{
     {
         id: 9,
         title: "BBQ waffle",
-        category: "shakes",
+        category: "lunch",
         price: 16.99,
         img: "./images/bbqwaffle.jpg",
         desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
     },
+    {
+        id: 10,
+        title: "Frothy Monkey",
+        category: "coffee",
+        price: 5.00,
+        img: "./images/frothymonkey.jpg",
+        desc: `delicious coffee brewed from the freshest and dopest of monkey beans`
+    }
 ];
 
 const sectionCenter = document.querySelector(".section-center");
